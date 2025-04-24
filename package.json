@@ -30,5 +30,9 @@
 	"bugs": {
 		"url": "https://github.com/albert-alanreys/workout-server/issues"
 	},
-	"homepage": "https://github.com/albert-alanreys/workout-server#readme"
+	"homepage": "https://github.com/albert-alanreys/workout-server#readme",
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"prettier": "^3.5.3"
+	}
 }
