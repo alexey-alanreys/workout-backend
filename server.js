@@ -18,6 +18,7 @@ async function main() {
 	}
 
 	app.use(express.json());
+
 	app.use('/api/auth', authRoutes);
 
 	app.use(notFound);
