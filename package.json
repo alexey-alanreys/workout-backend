@@ -2,7 +2,8 @@
 	"name": "workout-server",
 	"version": "1.0.0",
 	"description": "Backend server for the \"Workout\" educational project.",
-	"main": "index.js",
+	"main": "server.js",
+	"type": "module",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -33,6 +34,10 @@
 	"homepage": "https://github.com/albert-alanreys/workout-server#readme",
 	"devDependencies": {
 		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"colors": "^1.4.0",
 		"prettier": "^3.5.3"
+	},
+	"dependencies": {
+		"express": "^5.1.0"
 	}
 }
