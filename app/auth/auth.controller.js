@@ -13,7 +13,7 @@ import { generateToken } from './generate-token.js';
 export const authUser = asyncHandler(async (req, res) => {
 	const { email, password } = req.body;
 
-	const user = await prisma.users.findUnique({
+	const user = await prisma.user.findUnique({
 		where: {
 			email,
 		},
@@ -41,7 +41,7 @@ export const authUser = asyncHandler(async (req, res) => {
 export const registerUser = asyncHandler(async (req, res) => {
 	const { email, password } = req.body;
 
-	const isHaveUser = await prisma.users.findUnique({
+	const isHaveUser = await prisma.user.findUnique({
 		where: {
 			email,
 		},
@@ -52,7 +52,7 @@ export const registerUser = asyncHandler(async (req, res) => {
 		throw new Error('User already exists');
 	}
 
-	const user = await prisma.users.create({
+	const user = await prisma.user.create({
 		data: {
 			email,
 			name: faker.person.firstName(),
