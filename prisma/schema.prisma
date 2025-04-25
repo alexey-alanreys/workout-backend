@@ -27,7 +27,7 @@ model Workout {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   name      String
-  movements Exercise[]
+  exercises Exercise[]
 
   @@map("workouts")
 }
