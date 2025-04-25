@@ -27,12 +27,12 @@ model Workout {
   updatedAt DateTime @updatedAt @map("updated_at")
 
   name      String
-  movements Movement[]
+  movements Exercise[]
 
   @@map("workouts")
 }
 
-model Movement {
+model Exercise {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
@@ -42,5 +42,5 @@ model Movement {
   iconPath String @map("icon_path")
   routines Workout[]
 
-  @@map("movements")
+  @@map("exercises")
 }
