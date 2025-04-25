@@ -5,13 +5,13 @@ import { protect } from '../middleware/auth.middleware.js';
 import {
 	createNewMovement,
 	deleteMovement,
-	getNewMovement,
+	getMovement,
 	updateMovement,
 } from './movement.controller.js';
 
 const router = express.Router();
 
-router.route('/').get(protect, getNewMovement);
+router.route('/').get(protect, getMovement);
 router.route('/').post(protect, createNewMovement);
 router.route('/:id').put(protect, updateMovement);
 router.route('/:id').delete(protect, deleteMovement);

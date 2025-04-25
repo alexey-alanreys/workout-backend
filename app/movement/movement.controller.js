@@ -5,12 +5,13 @@ import { prisma } from '../prisma.js';
 // @desc    Get movements
 // @route   GET /api/movements
 // @access  Private
-export const getNewMovement = asyncHandler(async (req, res) => {
+export const getMovement = asyncHandler(async (req, res) => {
 	const movements = await prisma.movement.findMany({
 		orderBy: {
 			createdAt: 'desc',
 		},
 	});
+
 	res.json(movements);
 });
 
