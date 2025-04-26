@@ -1,4 +1,5 @@
 import 'colors';
+import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
 import morgan from 'morgan';
@@ -21,6 +22,7 @@ async function main() {
 		app.use(morgan('dev'));
 	}
 
+	app.use(cors());
 	app.use(express.json());
 
 	const __dirname = path.resolve();
