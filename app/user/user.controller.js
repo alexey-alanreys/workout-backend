@@ -1,6 +1,7 @@
 import asyncHandler from 'express-async-handler';
 
 import { prisma } from '../prisma.js';
+import { calculateMinutes } from '../utils/calculate-minutes.utils.js';
 import { userFields } from '../utils/user.utils.js';
 
 // @desc    Get user profile
@@ -23,16 +24,7 @@ export const getUserProfile = asyncHandler(async (req, res) => {
 			exercise: true,
 		},
 	});
-
-	let totalMinutes = 0;
-
-	for (const completedExercise of completedExercises) {
-		const exercise = completedExercise.exercise[0];
-
-		if (exercise) {
-			totalMinutes += exercise.times * 3;
-		}
-	}
+	let totalMinutes = calculateMinutes(completedExercises);
 
 	const workouts = await prisma.workoutLog.count({
 		where: {
