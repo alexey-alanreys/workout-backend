@@ -1,7 +1,7 @@
 {
 	"name": "workout-server",
 	"version": "1.0.0",
-	"description": "Backend server for the \"Workout\" educational project.",
+	"description": "Backend for the Workout educational project",
 	"main": "server.js",
 	"type": "module",
 	"scripts": {
@@ -13,19 +13,14 @@
 		"url": "git+https://github.com/albert-alanreys/workout-server.git"
 	},
 	"keywords": [
-		"workout",
-		"fitness",
-		"exercise",
-		"backend",
-		"server",
 		"api",
-		"restful",
-		"postgresql",
+		"backend",
 		"express",
-		"auth",
-		"educational",
+		"fitness",
 		"nodejs",
-		"pet-project"
+		"postgresql",
+		"prisma",
+		"rest"
 	],
 	"author": "Albert Alan-Reys",
 	"license": "MIT",
