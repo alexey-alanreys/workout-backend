@@ -6,40 +6,6 @@ This project provides a RESTful API for managing workout routines, user authenti
 
 ---
 
-## ⚙️ Development
-
-This project uses **Yarn** and requires **Node.js v22+**.
-
-To run the development server:
-
-```bash
-yarn install
-```
-
-Create a PostgreSQL database named `workout`.
-
-Create a `.env` file based on `.env.example`:
-
-```
-NODE_ENV=development
-DATABASE_URL=postgresql://<USERNAME>:<PASSWORD>@localhost:5432/workout?schema=public
-JWT_SECRET=<YOUR_SECRET_KEY>
-```
-
-Then apply existing migrations:
-
-```bash
-npx prisma migrate deploy
-```
-
-Finally, start the server:
-
-```bash
-yarn dev
-```
-
----
-
 ## 🧰 Tech Stack
 
 > A quick overview of the main tools and libraries used in this project.
@@ -71,6 +37,40 @@ yarn dev
 **Database Driver:**
 
 - **pg** — PostgreSQL driver for Node.js
+
+---
+
+## ⚙️ Development
+
+This project uses **Yarn** and requires **Node.js v22+**.
+
+To run the development server:
+
+```bash
+yarn install
+```
+
+Create a PostgreSQL database named `workout`.
+
+Create a `.env` file based on `.env.example`:
+
+```
+NODE_ENV=development
+DATABASE_URL=postgresql://<USERNAME>:<PASSWORD>@localhost:5432/workout?schema=public
+JWT_SECRET=<YOUR_SECRET_KEY>
+```
+
+Then apply existing migrations:
+
+```bash
+npx prisma migrate deploy
+```
+
+Finally, start the server:
+
+```bash
+yarn dev
+```
 
 ---
 
