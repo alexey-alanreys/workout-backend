@@ -2,7 +2,7 @@
 
 Backend for the **Workout** educational project.
 
-This project provides a RESTful API for managing workout routines, user authentication, and related fitness data.
+> Provides a RESTful API for workouts, users, and fitness data.
 
 ---
 
