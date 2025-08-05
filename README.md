@@ -2,8 +2,7 @@
 
 Backend for the **Workout** educational project.
 
-This project provides a RESTful API for managing workout routines, user authentication, and related fitness data.  
-It is built with **Node.js**, **Express**, **PostgreSQL**, and **Prisma**.
+This project provides a RESTful API for managing workout routines, user authentication, and related fitness data.
 
 ---
 
@@ -38,6 +37,40 @@ Finally, start the server:
 ```bash
 yarn dev
 ```
+
+---
+
+## 🧰 Tech Stack
+
+> A quick overview of the main tools and libraries used in this project.
+
+**Core:**
+
+- **Node.js** — JavaScript runtime
+- **Express.js** — web framework for building the API
+- **PostgreSQL** — relational database
+- **Prisma ORM** — type-safe database client
+
+**Authentication & Security:**
+
+- **argon2** — password hashing
+- **jsonwebtoken** — JWT authentication
+- **cors** — Cross-Origin Resource Sharing middleware
+
+**Development Tools:**
+
+- **nodemon** — auto-restarts server on changes
+- **morgan** — HTTP request logger
+- **dotenv** — environment variable loader
+- **prettier** + **@trivago/prettier-plugin-sort-imports** — code formatting
+
+**Testing & Mocking:**
+
+- **@faker-js/faker** — data generation for testing
+
+**Database Driver:**
+
+- **pg** — PostgreSQL driver for Node.js
 
 ---
 
