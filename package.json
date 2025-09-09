@@ -1,5 +1,5 @@
 {
-	"name": "workout-server",
+	"name": "workout-backend",
 	"version": "1.0.0",
 	"description": "Backend for the Workout educational project",
 	"main": "server.js",
@@ -10,7 +10,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/albert-alanreys/workout-server.git"
+		"url": "git+https://github.com/albert-alanreys/workout-backend.git"
 	},
 	"keywords": [
 		"api",
