@@ -1,4 +1,4 @@
-# Workout Server
+# Workout Backend
 
 Backend for the **Workout** educational project.
 
@@ -75,4 +75,4 @@ yarn dev
 ---
 
 **License:** MIT  
-**Author:** [Albert Alanreys](https://github.com/albert-alanreys)
+**Author:** [Albert Alan-Reys](https://github.com/albert-alanreys)
