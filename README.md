@@ -74,5 +74,5 @@ yarn dev
 
 ---
 
-**License:** MIT  
-**Author:** [Albert Alan-Reys](https://github.com/albert-alanreys)
+**License:** MIT
+**Author:** [Alexey Alan-Reys](https://github.com/alexey-alanreys)
